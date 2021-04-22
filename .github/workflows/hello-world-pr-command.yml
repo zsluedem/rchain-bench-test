@@ -1,0 +1,10 @@
+name: hello-world-pr-command
+on:
+  repository_dispatch:
+    types: [hello-world-pr-command]
+jobs:
+  helloWorld:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run bash
+        run: 'echo Found it!'
